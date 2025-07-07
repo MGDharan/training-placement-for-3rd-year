@@ -7,15 +7,13 @@ class Target {
             int mid = left + (right - left) / 2;
 
             if (nums[mid] == target) {
-                return mid;  // Found
+                return mid;  
             } else if (nums[mid] < target) {
-                left = mid + 1;  // Search right half
+                left = mid + 1;  
             } else {
-                right = mid - 1;  // Search left half
+                right = mid - 1;  
             }
         }
-
-        // Not found, return the insert position
         return left;
     }
 }
